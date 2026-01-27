@@ -20,16 +20,16 @@ const App: React.FC = () => {
               Mason W.<br />Matich
             </h1>
             
-            {/* Headshot Area - Softened Tones */}
-            <div className="shrink-0 pt-2">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-zinc-800 overflow-hidden border border-zinc-700 shadow-xl relative">
+            {/* Headshot Area - Updated to use headshot.jpg */}
+            <div className="shrink-0 pt-2 group">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-zinc-800 overflow-hidden border border-zinc-700 shadow-xl relative transition-transform duration-500 hover:scale-[1.02]">
                 <div className="absolute inset-0 flex items-center justify-center text-zinc-700">
                   <i className="fas fa-user text-4xl"></i>
                 </div>
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=3087&auto=format&fit=crop" 
+                  src="headshot.jpg" 
                   alt="Mason W. Matich" 
-                  className="w-full h-full object-cover relative z-10 grayscale brightness-75 contrast-100"
+                  className="w-full h-full object-cover relative z-10 brightness-95 contrast-105 transition-all duration-500"
                 />
               </div>
             </div>
@@ -227,7 +227,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* Honors - Minimalist Redesign with larger font and restored gray color */}
+        {/* Honors */}
         <section id="honors" className="mb-24">
           <h2 className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em] text-zinc-600 mb-12 flex items-center gap-4">
             Honors
