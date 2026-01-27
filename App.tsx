@@ -29,7 +29,7 @@ const App: React.FC = () => {
                 <img 
                   src="assets/headshot.jpg"
                   alt="Mason W. Matich" 
-                  className="w-full h-full object-cover relative z-10 brightness-95 contrast-105 transition-all duration-500"
+                  className="w-full h-full object-cover relative z-10 brightness-95 contrast-105 grayscale transition-all duration-500"
                 />
               </div>
             </div>
