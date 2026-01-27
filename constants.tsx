@@ -38,12 +38,23 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
+    id: 'exp0',
+    institution: 'The Jackson Laboratory',
+    role: 'Biomedical Data Science in Context Course',
+    location: 'Bar Harbor, ME',
+    period: 'Jan 2025',
+    logoUrl: 'assets/jax.png',
+    description: [
+      'Applied Limma for Microarray data analysis, identifying genes relevant to scleroderma and sex-specific disease manifestation.'
+    ]
+  },
+  {
     id: 'exp1',
     institution: 'MDI Biological Laboratory',
     role: 'NSF REU Summer Fellow',
     location: 'Bar Harbor, ME',
     period: 'Summer 2025',
-    logoUrl: 'https://mdibl.org/wp-content/uploads/2021/01/MDIBL_Logo_Square_RGB.png',
+    logoUrl: 'assets/mdibl.png',
     description: [
       'Investigated the molecular mechanisms of germline RNA interference using C. elegans models.',
       'Developed custom R scripts for bulk RNA-seq data analysis and high-throughput meta-analysis.',
@@ -56,7 +67,7 @@ export const EXPERIENCE: Experience[] = [
     role: 'Undergraduate Research Assistant',
     location: 'Pullman, WA',
     period: 'Aug 2023 – Present',
-    logoUrl: 'https://wsu.edu/wp-content/themes/wsu-home-2018/images/wsu-logo.svg',
+    logoUrl: 'assets/wsu.png',
     description: [
       'Leading bioinformatics analysis for projects focused on systemic sclerosis and skin wound healing.',
       'Specializing in scRNA-seq pipelines using Seurat and CellChat for cell-cell communication modeling.',
@@ -85,8 +96,24 @@ export const PUBLICATIONS: Publication[] = [
   {
     id: 'pres2',
     title: 'Fibroblast and Endothelial Cells Display CXCL12 Dysregulation in Systemic Sclerosis Skin',
-    journal: 'WSU Showcase for Undergraduate Research',
+    journal: 'WSU Showcase for Undergraduate Research and Creative Activities',
     year: 2025,
+    doi: '#',
+    type: 'Poster'
+  },
+  {
+    id: 'pres3',
+    title: 'Wound Healing Dynamics Through Development and Aging',
+    journal: 'WSU College of Veterinary Medicine Research Symposium',
+    year: 2024,
+    doi: '#',
+    type: 'Poster'
+  },
+  {
+    id: 'pres4',
+    title: 'Dermal Lef1 Expression Regulates Skin and Whisker Development, Maturation, and Aging in the Face of Mice',
+    journal: 'WSU Showcase for Undergraduate Research and Creative Activities',
+    year: 2024,
     doi: '#',
     type: 'Poster'
   }

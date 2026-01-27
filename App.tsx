@@ -27,7 +27,7 @@ const App: React.FC = () => {
                   <i className="fas fa-user text-4xl"></i>
                 </div>
                 <img 
-                  src="headshot.jpg" 
+                  src="assets/headshot.jpg"
                   alt="Mason W. Matich" 
                   className="w-full h-full object-cover relative z-10 brightness-95 contrast-105 transition-all duration-500"
                 />
@@ -61,13 +61,13 @@ const App: React.FC = () => {
 
             <div className="pt-2">
               <a 
-                href="/resume.pdf" 
+                href="assets/resume.pdf"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center gap-3 px-6 py-3 bg-zinc-300 text-zinc-900 text-xs font-black uppercase tracking-[0.2em] rounded-sm hover:bg-zinc-400 transition-all duration-300"
               >
                 <i className="fas fa-file-pdf"></i>
-                Download Curriculum Vitae
+                View Curriculum Vitae
               </a>
             </div>
           </div>
