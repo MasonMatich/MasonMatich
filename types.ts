@@ -15,6 +15,7 @@ export interface Publication {
   year: number;
   doi: string;
   type: 'Paper' | 'Talk' | 'Poster';
+  pdfUrl?: string;
 }
 
 export interface Skill {

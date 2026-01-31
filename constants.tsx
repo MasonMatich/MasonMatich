@@ -4,8 +4,8 @@ import { Project, Publication, Skill, Experience, ShinyApp } from './types';
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'LOTR-1 in Germline RNA Interference',
-    description: 'Investigating the role of protein LOTR-1 in C. elegans. Developed R dashboards to visualize DEG trends and performed PCA meta-analysis across mutant strains.',
+    title: 'Bulk RNA-seq Automated Workflow',
+    description: 'A reproducible, automated workflow for differential gene expression analysis of bulk RNA-seq data using DESeq2, with comprehensive gene ontology enrichment analysis and interactive HTML reports.',
     tags: ['R', 'Bulk RNA-seq', 'PCA', 'C. elegans'],
     link: 'https://masonmatich.github.io/bulk_RNA_seq_workflow/#Inputs_Received',
     category: 'Transcriptomics'
@@ -61,7 +61,7 @@ export const EXPERIENCE: Experience[] = [
     institution: 'MDI Biological Laboratory',
     role: 'NSF REU Summer Fellow',
     location: 'Bar Harbor, ME',
-    period: 'Summer 2025',
+    period: 'May 2025 – Dec 2025',
     logoUrl: 'assets/mdibl.png',
     description: [
       'Investigated the molecular mechanisms of germline RNA interference using C. elegans models.',
@@ -74,7 +74,7 @@ export const EXPERIENCE: Experience[] = [
     institution: 'Washington State University',
     role: 'Undergraduate Research Assistant',
     location: 'Pullman, WA',
-    period: 'Aug 2023 – Present',
+    period: 'Aug 2023 – Dec 2025',
     logoUrl: 'assets/wsu.png',
     description: [
       'Leading bioinformatics analysis for projects focused on systemic sclerosis and skin wound healing.',
@@ -107,6 +107,7 @@ export const PUBLICATIONS: Publication[] = [
     journal: 'WSU Showcase for Undergraduate Research and Creative Activities',
     year: 2025,
     doi: '#',
+    pdfUrl: 'assets/sclerosisskinposter.pdf',
     type: 'Poster'
   },
   {
@@ -115,6 +116,7 @@ export const PUBLICATIONS: Publication[] = [
     journal: 'WSU College of Veterinary Medicine Research Symposium',
     year: 2024,
     doi: '#',
+    pdfUrl: 'assets/woundhealingdynamicsposter.pdf',
     type: 'Poster'
   },
   {
@@ -123,6 +125,7 @@ export const PUBLICATIONS: Publication[] = [
     journal: 'WSU Showcase for Undergraduate Research and Creative Activities',
     year: 2024,
     doi: '#',
+    pdfUrl: 'assets/dermallef1poster.pdf',
     type: 'Poster'
   }
 ];

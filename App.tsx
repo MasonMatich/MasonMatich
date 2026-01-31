@@ -45,7 +45,7 @@ const App: React.FC = () => {
 
               {/* CV Button */}
               <a 
-                href="assets/resume.pdf"
+                href="assets/curriculumvitae.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-3 bg-neutral-300 text-neutral-900 text-xs font-black uppercase tracking-[0.2em] rounded-sm hover:bg-neutral-400 transition-all duration-300"
@@ -252,7 +252,12 @@ const App: React.FC = () => {
                 </div>
                 
                 <h3 className="text-2xl md:text-3xl font-black text-neutral-200 group-hover:text-neutral-100 leading-tight mb-3 transition-colors tracking-tight">
-                   {pub.doi !== '#' ? (
+                   {pub.pdfUrl ? (
+                    <a href={pub.pdfUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
+                      {pub.title}
+                      <i className="fas fa-file-pdf text-xs opacity-10 group-hover:opacity-100 transition-opacity"></i>
+                    </a>
+                  ) : pub.doi !== '#' ? (
                     <a href={pub.doi.startsWith('10.') ? `https://doi.org/${pub.doi}` : pub.doi} className="flex items-center gap-4">
                       {pub.title}
                       <i className="fas fa-arrow-up-right text-xs opacity-10 group-hover:opacity-100 transition-opacity"></i>

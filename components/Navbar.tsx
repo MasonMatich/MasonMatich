@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
             <a href="#publications" className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-500 hover:text-neutral-200 transition-colors">Research</a>
           </div>
             <a 
-              href="assets/resume.pdf"
+              href="assets/curriculumvitae.pdf"
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center gap-3 px-6 py-3 bg-neutral-300 text-neutral-900 text-xs font-black uppercase tracking-[0.2em] rounded-sm hover:bg-neutral-400 transition-all duration-300"
