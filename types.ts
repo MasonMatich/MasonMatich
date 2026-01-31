@@ -19,7 +19,7 @@ export interface Publication {
 
 export interface Skill {
   name: string;
-  category: 'Computational' | 'Wet Lab' | 'Professional';
+  category: 'Modalities' | 'Languages' | 'Tools' | 'Platforms';
 }
 
 export interface Experience {
@@ -30,4 +30,12 @@ export interface Experience {
   period: string;
   description: string[];
   logoUrl?: string;
+}
+
+export interface ShinyApp {
+  id: string;
+  title: string;
+  description: string;
+  link: string;
+  imageUrl?: string;
 }

@@ -1,5 +1,5 @@
 
-import { Project, Publication, Skill, Experience } from './types';
+import { Project, Publication, Skill, Experience, ShinyApp } from './types';
 
 export const PROJECTS: Project[] = [
   {
@@ -7,27 +7,35 @@ export const PROJECTS: Project[] = [
     title: 'LOTR-1 in Germline RNA Interference',
     description: 'Investigating the role of protein LOTR-1 in C. elegans. Developed R dashboards to visualize DEG trends and performed PCA meta-analysis across mutant strains.',
     tags: ['R', 'Bulk RNA-seq', 'PCA', 'C. elegans'],
-    link: 'https://github.com/MasonMatich',
+    link: 'https://masonmatich.github.io/bulk_RNA_seq_workflow/#Inputs_Received',
     category: 'Transcriptomics'
   },
   {
     id: '2',
-    title: 'Systemic Sclerosis scRNA-seq Analysis',
-    description: 'Conducted cell-type specific differential expression analysis and inferred cell-cell communication networks using CellChat for fibroblast-endothelial interactions.',
-    tags: ['Seurat', 'CellChat', 'scRNA-seq', 'Pathology'],
-    link: 'https://github.com/MasonMatich',
+    title: 'Domestic Cattle Skin scRNA-seq Analysis',
+    description: 'Reanalyzed scRNA-seq data from bovine skin to identify cell populations and gene expression patterns associated with hair follicle development.',
+    tags: ['Seurat', 'scRNA-seq', 'Tissue Biology'],
+    link: 'https://skinregeneration.org/dataset/domestic-cattle-skin/',
     category: 'Transcriptomics'
   },
   {
     id: '3',
-    title: 'Wound Healing Dynamics & Aging',
-    description: 'Applied end-to-end Seurat pipelines to examine age-related transcriptional dynamics in murine skin wound healing models.',
-    tags: ['Batch Correction', 'Data Integration', 'Transcriptomics'],
-    link: 'https://github.com/MasonMatich',
+    title: 'Systemic Sclerosis scRNA-seq Analysis',
+    description: 'Conducted cell-type specific differential expression analysis and inferred cell-cell communication networks using CellChat for fibroblast-endothelial interactions.',
+    tags: ['Seurat', 'CellChat', 'scRNA-seq', 'Pathology'],
+    link: 'https://skinregeneration.org/dataset/systemic-sclerosis-skin-9de3b-1/',
     category: 'Transcriptomics'
   },
   {
     id: '4',
+    title: 'Wound Healing Dynamics & Aging',
+    description: 'Applied end-to-end Seurat pipelines to examine age-related transcriptional dynamics in murine skin wound healing models.',
+    tags: ['Batch Correction', 'Data Integration', 'Transcriptomics'],
+    link: 'https://skinregeneration.org/dataset/p5-unsorted-skin/',
+    category: 'Transcriptomics'
+  },
+  {
+    id: '5',
     title: 'Dermal Lef1 & Computer Vision',
     description: 'Developed training datasets to optimize computer vision ML algorithms for high-throughput quantification of biological samples in skin development studies.',
     tags: ['Machine Learning', 'Computer Vision', 'Phenotyping'],
@@ -119,16 +127,27 @@ export const PUBLICATIONS: Publication[] = [
   }
 ];
 
+export const SHINY_APPS: ShinyApp[] = [
+  {
+    id: 'shiny1',
+    title: 'PCA Visualizer',
+    description: 'A Shiny application for visualizing Principal Component Analysis (PCA) results from RNA-seq or other high-dimensional datasets.',
+    link: 'https://mwmatich.shinyapps.io/pca_visualizer/',
+    imageUrl: 'assets/pca_vis.png'
+  }
+];
+
 export const SKILLS: Skill[] = [
-  { name: 'R (Seurat, DESeq2, ggplot2)', category: 'Computational' },
-  { name: 'Python (Pandas, NumPy)', category: 'Computational' },
-  { name: 'Cell Ranger (Alignment)', category: 'Computational' },
-  { name: 'Nextflow Pipelines', category: 'Computational' },
-  { name: 'AWS (Storage/Compute)', category: 'Computational' },
-  { name: 'HPC (Slurm)', category: 'Computational' },
-  { name: 'Tissue Processing & Staining', category: 'Wet Lab' },
-  { name: 'PCR & DNA/RNA Extraction', category: 'Wet Lab' },
-  { name: 'Microtome Sectioning', category: 'Wet Lab' },
-  { name: 'Scientific Communication', category: 'Professional' },
-  { name: 'Project Management', category: 'Professional' }
+  { name: 'RNAseq', category: 'Modalities' },
+  { name: 'scRNAseq', category: 'Modalities' },
+  { name: 'Microarray', category: 'Modalities' },
+  { name: 'Python', category: 'Languages' },
+  { name: 'R', category: 'Languages' },
+  { name: 'BASH', category: 'Languages' },
+  { name: 'Nextflow', category: 'Tools' },
+  { name: 'nf-core', category: 'Tools' },
+  { name: 'command line', category: 'Tools' },
+  { name: 'git/Github', category: 'Tools' },
+  { name: 'Amazon Web Services', category: 'Platforms' },
+  { name: 'Slurm', category: 'Platforms' } 
 ];
