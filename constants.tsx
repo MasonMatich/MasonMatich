@@ -137,6 +137,13 @@ export const SHINY_APPS: ShinyApp[] = [
     description: 'A Shiny application for visualizing Principal Component Analysis (PCA) results from RNA-seq or other high-dimensional datasets.',
     link: 'https://mwmatich.shinyapps.io/pca_visualizer/',
     imageUrl: 'assets/pca_vis.png'
+  },
+  {
+    id: 'shiny2',
+    title: 'Gene Ontology Visualizer',
+    description: 'Interactive Shiny app for visualizing Gene Ontology (GO) and Reactome Pathway enrichment analysis from DESeq2 results.',
+    link: 'https://mwmatich.shinyapps.io/gene_ontology_visualizer/',
+    imageUrl: 'assets/go_vis.png'
   }
 ];
 

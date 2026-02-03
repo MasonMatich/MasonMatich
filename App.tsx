@@ -251,16 +251,14 @@ const App: React.FC = () => {
                   <span>{pub.type} • {pub.year}</span>
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl font-black text-neutral-200 group-hover:text-neutral-100 leading-tight mb-3 transition-colors tracking-tight">
+                <h3 className="text-2xl md:text-3xl font-black text-neutral-200 leading-tight mb-3 tracking-tight">
                    {pub.pdfUrl ? (
-                    <a href={pub.pdfUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4">
+                    <a href={pub.pdfUrl} target="_blank" rel="noopener noreferrer" className="group-hover:text-white transition-colors duration-300 border-b-2 border-transparent group-hover:border-neutral-700">
                       {pub.title}
-                      <i className="fas fa-file-pdf text-xs opacity-10 group-hover:opacity-100 transition-opacity"></i>
                     </a>
                   ) : pub.doi !== '#' ? (
-                    <a href={pub.doi.startsWith('10.') ? `https://doi.org/${pub.doi}` : pub.doi} className="flex items-center gap-4">
+                    <a href={pub.doi.startsWith('10.') ? `https://doi.org/${pub.doi}` : pub.doi} className="group-hover:text-white transition-colors duration-300 border-b-2 border-transparent group-hover:border-neutral-700">
                       {pub.title}
-                      <i className="fas fa-arrow-up-right text-xs opacity-10 group-hover:opacity-100 transition-opacity"></i>
                     </a>
                   ) : (
                     pub.title
