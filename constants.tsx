@@ -159,5 +159,6 @@ export const SKILLS: Skill[] = [
   { name: 'command line', category: 'Tools' },
   { name: 'git/Github', category: 'Tools' },
   { name: 'Amazon Web Services', category: 'Platforms' },
-  { name: 'Slurm', category: 'Platforms' } 
+  { name: 'Slurm', category: 'Platforms' },
+  { name: 'HPC', category: 'Platforms' }
 ];
